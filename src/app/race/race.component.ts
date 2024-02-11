@@ -9,6 +9,6 @@ import { RaceModel } from '../models/race.model';
   styleUrl: './race.component.css'
 })
 export class RaceComponent {
-  @Input({required : true})
+  @Input({ required: true })
   raceModel!: RaceModel;
 }

@@ -1,8 +1,8 @@
-<h2>{{raceModel.name}}</h2>
+<h2>{{ raceModel.name }}</h2>
 <ul>
-    @for(pony of raceModel.ponies; track $index){
+  @for (pony of raceModel.ponies; track $index) {
     <li>
-        {{pony.name}}
+      {{ pony.name }}
     </li>
-    }
+  }
 </ul>

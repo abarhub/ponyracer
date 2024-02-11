@@ -22,7 +22,8 @@ export class RacesComponent {
         { id: 5, name: 'Fast Rainbow', color: 'BLUE' }
       ],
       startInstant: '2020-02-18T08:02:00Z'
-    }, {
+    },
+    {
       id: 13,
       name: 'Tokyo',
       ponies: [
