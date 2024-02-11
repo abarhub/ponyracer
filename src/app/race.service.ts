@@ -1,17 +1,11 @@
-import { Component } from '@angular/core';
-import { RaceModel } from '../models/race.model';
-import { RaceComponent } from '../race/race.component';
-import { RaceService } from '../race.service';
+import { Injectable } from '@angular/core';
+import { RaceModel } from './models/race.model';
 
-@Component({
-  selector: 'pr-races',
-  standalone: true,
-  imports: [RaceComponent],
-  templateUrl: './races.component.html',
-  styleUrl: './races.component.css'
+@Injectable({
+  providedIn: 'root'
 })
-export class RacesComponent {
-  races: RaceModel[] = [
+export class RaceService {
+  private races: RaceModel[] = [
     {
       id: 12,
       name: 'Paris',
@@ -38,7 +32,9 @@ export class RacesComponent {
     }
   ];
 
-  constructor(raceService: RaceService) {
-    this.races = raceService.list();
+  constructor() {}
+
+  list(): RaceModel[] {
+    return this.races;
   }
 }
