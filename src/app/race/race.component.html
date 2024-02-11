@@ -2,7 +2,7 @@
 <ul>
   @for (pony of raceModel.ponies; track $index) {
     <li>
-      {{ pony.name }}
+      <pr-pony [ponyModel]="pony"></pr-pony>
     </li>
   }
 </ul>

@@ -1,0 +1,4 @@
+<figure (click)="clicked()">
+  <img [src]="'assets/images/pony-' + ponyModel.color.toLowerCase() + '.gif'" [alt]="ponyModel.name" />
+  <figcaption>{{ ponyModel.name }}</figcaption>
+</figure>
