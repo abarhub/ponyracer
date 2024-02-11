@@ -1,9 +1,9 @@
 <h2>{{ raceModel.name }}</h2>
+<p>{{ raceModel.startInstant | date: 'short' }}</p>
 <ul>
   @for (pony of raceModel.ponies; track $index) {
     <li>
       <pr-pony [ponyModel]="pony"></pr-pony>
     </li>
   }
-  <p>{{ raceModel.startInstant | date: 'short' }}</p>
 </ul>
