@@ -18,4 +18,8 @@ export class PonyComponent {
   clicked() {
     this.ponyClicked.emit(this.ponyModel);
   }
+
+  getPonyImageUrl() {
+    return 'assets/images/pony-' + this.ponyModel.color.toLowerCase() + '.gif';
+  }
 }
